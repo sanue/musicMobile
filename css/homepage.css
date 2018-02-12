@@ -1,0 +1,471 @@
+/*栅栏*/
+.col-01{
+    width:1rem;
+}
+.col-02{
+    width:2rem;
+}
+.col-03{
+    width:3rem;
+}
+.col-04{
+    width:4rem;
+}
+.col-05{
+    width:5rem;
+}
+.col-06{
+    width:6rem;
+}
+.col-07{
+    width:7rem;
+}
+.col-08{
+    width:8rem;
+}
+.col-09{
+    width:9rem;
+}
+.col-10{
+    width:10rem;
+}
+.col-11{
+    width:11rem;
+}
+html{
+    font-family: '微软雅黑';
+}
+.header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height:3rem;
+    line-height: 3rem;
+    background: #f2f2f2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: box;
+    display: -webkit-box;
+
+}
+.header>div{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    text-align: center;
+    font-weight: bold;
+
+}
+.header>div.actived{
+    border-bottom: 2px solid #ccc;
+}
+.main,.maintwo,.mainthree,#SingerIntroduce{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:3rem;
+    bottom:3rem;
+    overflow-y: auto;
+ }
+.footer{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      height: 3rem;
+      background: #f2f2f2;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+  }
+.adpic{
+    width:100%;
+    height: 10rem;
+}
+.adpic>img{
+    height: 10rem;
+    display: block;
+}
+/*新歌速递*/
+.title{
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    color:#0c8ed9;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0px 0.5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#picContain{
+    padding: 0.5rem 0px;
+}
+.picContain{
+    padding: 0.5rem 0px;
+}
+.banner{
+    width: 8.8rem;
+    height: 8.8rem;
+    display: inline-block;
+    margin: 0px 0.5rem;
+    margin-top: 0.5rem;
+}
+.banner>img{
+    border-radius: 20%;
+    display: block;
+    width: 8.8rem;
+    height: 8.8rem;
+}
+.banner>h3{
+    font-weight:100;
+    text-align: center;
+    padding: 0.5rem 0px;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+/*播放器*/
+.player{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 2.5rem;
+    background-color:#1d1d1d;
+    padding: 0.25rem;
+}
+#songPic{
+    border-radius: 15%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+}
+#songPic>img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 15%;
+}
+.oper{
+    display: inline-block;
+    width: 16rem;
+    margin-left:1rem;
+    height: 2rem;
+}
+#line{
+    display: inline-block;
+    width: 80%;
+    height: 0.2rem;
+    background-color: white;
+    position: absolute;
+    top: 0.5rem;
+}
+#blueline{
+    display: inline-block;
+    height: 0.2rem;
+    background-color:cornflowerblue;
+    position: absolute;
+}
+#songName{
+    color:white;
+    display: inline-block;
+    position: absolute;
+    font-size: 0.9rem;
+    top: 1.2rem;
+}
+.operate{
+    display: inline-block;
+    position: absolute;
+    height: 1.2rem;
+    width: 5rem;
+    top: 1.2rem;
+    right: 0.5rem;
+    color: white;
+}
+.operate>i{
+    font-size: 0.8rem;
+}
+.playlist{
+    position: fixed;
+    bottom:3rem;
+    height: 40%;
+    width: 100%;
+    left: 0px;
+    background-color: white;
+}
+.listTitle{
+font-size: 0.88rem;
+    color: #0088cc;
+    height: 2rem;
+    line-height:2rem;
+}
+#Listen{
+    position: absolute;
+    right: 1rem;
+    background-color: rgba(127, 127, 127, 0.3);
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 0.1rem;
+    text-align: center;
+}
+.songlist{
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    overflow-y: auto;
+    z-index: 250;
+    top: 2rem;
+}
+.songs{
+    font-size: 0.8rem;
+    height: 3rem;
+    line-height: 3rem;
+    width: 18rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+.songs>div{
+    display: inline-block;
+}
+.dele{
+    position: absolute;
+    left: 17rem;
+}
+.dele>img{
+    vertical-align: middle;
+}
+#num{
+    width:1rem;
+}
+.icon-th-list{
+    margin-left: 0.5rem;
+}
+.maintwo,.mainthree,#SingerIntroduce{
+    display: none;
+}
+.cover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 3rem;
+    background: rgba(0,0,0,0.2);
+}
+.cover,.playlist {
+    display: none;
+}
+.icon-play:hover,.icon-fast-forward:hover,.icon-th-list:hover{
+    color:#c2c2c2;
+}
+/*歌手列表*/
+#ret{
+    position: absolute;
+}
+#ret>img{
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    position: absolute;
+    left: 1rem;
+
+}
+.singerListContainer,.singersListContainer{
+    display: inline-block;
+    background:rgba(255,255,255,0.05);
+    position: absolute;
+    top:0rem;
+    bottom:0rem;
+    left: 0px;
+    right: 0rem;
+    overflow-y: auto;
+}
+.singerList,.songList{
+    background-color: rgba(114, 156, 232, 0.14);
+    width: 100%;
+    height:3rem;
+    line-height: 3rem;
+    position: relative;
+    border-bottom: 0.01rem solid #ccc;
+}
+#singerPic{
+    display: inline-block;
+    position :absolute;
+	left:1rem;
+    width: 15%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+	    top: 0.5rem;
+}
+#singerPic>img{
+    width: 2.5rem;
+    height: 2.5rem;
+	border-radius:50%;
+    margin-top: -0.2rem;
+	}
+.singerList:hover{
+    background-color: #cccccc;
+}
+#singerName,#singerInfo{
+    display: inline-block;
+    position: absolute;
+	left:4rem;
+}
+/*zimu*/
+.zimu{
+    position: absolute;
+    right: 0px;
+    left: 18rem;
+    top:0px;
+    bottom:1.5rem;
+    overflow-y: auto;
+}
+.zm{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: rgba(114, 156, 232, 0.14);
+    font-size: 0.7rem;
+}
+#all {
+    bottom: 0.3rem;
+    position: absolute;
+    right: 0;
+    font-size: 0.7rem;
+    background-color: rgba(255, 88, 27, 0.66);
+    height: 1rem;
+    line-height: 1rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 35%;
+    color: white;
+}
+.zm:hover{
+    background-color: #ccc;
+}
+#play{
+    position: absolute;
+    right: 3rem;
+    right: 1rem;
+    left: 17rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.11);
+    top: 0.5rem;
+}
+/*main2*/
+#songslistName,#singerlistName{
+    height: 1.5rem;
+    line-height:1.5rem ;
+}
+#songslistName{
+    font-size: 0.7rem;
+}
+.showMorehandle {
+       background-color: rgba(153, 240, 243, 0.58);
+       width: 100%;
+       height: 3rem;
+       line-height: 3rem;
+       position: relative;
+       border-bottom: 0.01rem solid #ccc;
+       text-align: center;
+}
+#singerlistName{
+    font-size: 0.7rem;
+}
+/*歌手简介*/
+#singerIntroPic{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+}
+#singerIntroPic>.cov{
+    position: absolute;
+    width: 20rem;
+    background: rgba(0,0,0,0.14);
+    height: 12rem;
+}
+#singerIntroPic>img{
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 6rem;
+    top: 1rem;
+
+}
+#singerInfoName{
+    position: absolute;
+    bottom:1rem;
+    top:9.5rem;
+    width: 20rem;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+}
+/*歌手简介主体*/
+.Introcontent{
+    position: absolute;
+    top: 12rem;
+    left:0px;
+    right: 0px;
+    bottom:3rem;
+}
+.IntrocontentTitle{
+    width: 20rem;
+    height: 2rem;
+
+}
+.IntrocontentTitle>div{
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    width:10rem;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#playicon{
+    height: 2rem;
+    line-height: 2rem;
+
+}
+#singerPlayList{
+    position: absolute;
+    top:4rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    overflow-y: auto;
+}
+.singerPlayListSongName{
+    width: 17rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+
+}
+#songNum{
+    position:absolute;
+    line-height:4rem;
+    right:2.5rem;
+    font-size:0.5rem;
+}
+#Tag {
+    background-color: #988e8e;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: -0.15rem;
+    border-radius: 50%;
+}

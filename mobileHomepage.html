@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/homepage.css"/>
+    <link rel="stylesheet" href="css/fontello.css"/>
+
+</head>
+    <script>
+        (function(){
+            var colCount = 20;
+            //  设置列宽
+            var colWidth =  document.documentElement.clientWidth / colCount;
+            //  确定基本的font-size
+            document.querySelector('html').style.fontSize = colWidth + 'px';
+        })();
+
+    </script>
+<body>
+<div class="header">
+    <div class="actived">首页</div>
+    <div>音乐馆</div>
+    <div>歌手</div>
+</div>
+
+
+<div class="main">
+    <div id="duration"></div>
+    <div id="currentTime"></div>
+    <div class="adpic">
+        <img src="newSongPic/ad01.jpg" id="ad" height="100%" width="100%"/>
+    </div>
+    <div class="newSongContain">
+        <div class="title">新歌速递</div>
+        <div  class="picContain" id="picContain">
+            
+        </div>
+    </div>
+    <div class="newSingerContain">
+        <div class="title">歌手推荐</div>
+        <div class="picContain" id="singerContain">
+
+        </div>
+    </div>
+</div>
+
+<!--音乐馆-->
+<div class="maintwo">
+    <div class="singerListContainer">
+
+        <!-- <div class="singerList">
+            <div id="singerPic"><img src="icon/baby.jpg" /></div>
+            <div id="singerInfo">
+                <div id="songslistName">光辉岁月</div>
+                <div id="singerlistName">BEYOND</div>
+            </div>
+            <div id="play"><i class="icon-play"></i></div>
+        </div>-->
+    </div>
+
+</div>
+<!--歌手-->
+<div class="mainthree">
+    <div class="singersListContainer">
+        
+<!--    <div class="singerList">
+    <div id="singerPic"><img src="icon/baby.jpg" /></div>
+    <div id="singerName">baby</div>
+    <div id="play"><i class="icon-play"></i></div>
+</div>
+
+ -->
+    </div>
+    <div id="all">全部</div>
+    <div class="zimu">
+
+    </div>
+</div>
+
+<!--歌手信息-->
+<div id="SingerIntroduce" style="background: #CCC">
+    <div id="singerIntroPic">
+        <div class="cov"></div>
+        <div id="ret"><img src="images/fh.png"/> </div>
+        <img src="icon/justinbieber.jpg" />
+        <div id="singerInfoName">贾斯汀比伯</div>
+    </div>
+    <div class="Introcontent">
+        <div class="IntrocontentTitle">
+            <div id="HisSongs">单曲</div><div id="HisIntro">详情</div>
+        </div>
+
+        <div id="playicon">
+            全部播放<i class="icon-play"></i>
+        </div>
+
+        <div id="singerPlayList">
+            <div class="singerPlayListSongName">baby</div>
+            <div class="singerPlayListSongName">baby</div>
+
+
+
+        </div>
+</div>
+
+</div>
+
+
+
+<div class="cover"></div>
+<div class="playlist">
+    <div class="listTitle">播放列表</div>
+    <div class="songlist">
+
+<!--  <div class="songs">
+    <div id="num">01</div>
+    <div class="Name">彩虹</div>
+    <div class="singerName">包诗雨</div>
+    <div class="dele"><img src="images/dele.png"/></div>
+</div> -->
+        
+    </div>
+</div>
+
+<div class="player">
+    <div id="songPic">
+        <img src="icon/baby.jpg" />
+    </div>
+    <div class="oper">
+        <!--进度条-->
+        <div id="line">
+            <div id="blueline"></div>
+            <div id="Tag"></div>
+        </div>
+
+        <div id="songName">歌曲名称:</div>
+        <div class="operate">
+            <i class="icon-play" id="playit"></i>
+            <i class="icon-fast-forward"></i>
+            <i class="icon-th-list"></i>
+        </div>
+    </div>
+</div>
+<audio></audio>
+<script src="js/jquery.js"></script>
+<script src="js/data.js"></script>
+<script src="js/homepage.js"></script>
+</body>
+</html>
